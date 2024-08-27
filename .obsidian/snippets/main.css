@@ -1,0 +1,77 @@
+/* Custom Callouts */
+.callout[data-callout="file"] {
+    --callout-color: 0, 130, 255;
+    --callout-icon: file-code;
+}
+
+.callout[data-callout="important"] {
+    --callout-color: 255, 50, 40;
+    --callout-icon: siren;
+}
+/* ------------------------- */
+
+/* Remove margin above starting of lists */
+ul:first-child > li:first-child {
+    margin-block-start: -1.5em;
+}
+
+ul:first-child > li:first-child ul:first-child > li:first-child {
+    margin-block-start: inherit;
+}
+
+ol:first-child > li:first-child {
+    margin-block-start: -1.5em;
+}
+
+ol:first-child > li:first-child ol:first-child > li:first-child {
+    margin-block-start: inherit;
+}
+
+/* ------------------------- */
+
+/* Remove margin below headings */
+
+.mod-cm6 .HyperMD-header,
+.markdown-reading-view :is(h1, h2, h3, h4, h5, h6) {
+    line-height: 1em !important;
+    margin: 15px 0px -10px 0px !important;
+    padding: 10px 0px 5px 0px !important;
+}
+
+.markdown-rendered p {
+    margin-block-start: 15px;
+    margin-block-end: 1px;
+}
+
+/* ------------------------- */
+
+/* Add margin abobe dataview table */
+
+.block-language-dataview{
+    margin-top : 10px;
+}
+
+
+/* ------------------------- */
+
+/* Highlight active tab */
+/* .theme-dark .workspace-leaf.mod-active .view-header {
+    border-bottom: 2px solid #8b837e !important;
+}
+.theme-light .workspace-leaf.mod-active .view-header {
+    border-bottom: 2px solid #ffb86c !important;
+} */
+/* ------------------------- */
+
+/* Text Highlight customization */
+/* span.cm-highlight,
+mark {
+    background-color: rgba(166, 138, 249, 0.5) !important;
+    color: #fff;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    border-radius: 3px;
+} */
+/* ------------------------- */

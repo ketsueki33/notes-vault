@@ -1,0 +1,72 @@
+{
+  "collapse-filter": false,
+  "search": "",
+  "showTags": false,
+  "showAttachments": false,
+  "hideUnresolved": true,
+  "showOrphans": true,
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {
+      "query": "[type:daily-note]",
+      "color": {
+        "a": 1,
+        "rgb": 7062016
+      }
+    },
+    {
+      "query": "path:Journal/Daily  ",
+      "color": {
+        "a": 1,
+        "rgb": 13433747
+      }
+    },
+    {
+      "query": "path:\"Knowledge Base/DSA\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 15817563
+      }
+    },
+    {
+      "query": "path:\"Knowledge Base/NextJS\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 0
+      }
+    },
+    {
+      "query": "path:\"Knowledge Base/JavaScript\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 16244510
+      }
+    },
+    {
+      "query": "path:\"Knowledge Base/React\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 6413307
+      }
+    },
+    {
+      "query": "path:\"Knowledge Base/LeetCode\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 10557207
+      }
+    }
+  ],
+  "collapse-display": false,
+  "showArrow": true,
+  "textFadeMultiplier": -0.9,
+  "nodeSizeMultiplier": 1,
+  "lineSizeMultiplier": 1,
+  "collapse-forces": false,
+  "centerStrength": 0.565104166666667,
+  "repelStrength": 14.7395833333333,
+  "linkStrength": 1,
+  "linkDistance": 250,
+  "scale": 0.33591195678107755,
+  "close": true
+}

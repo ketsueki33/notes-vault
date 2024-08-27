@@ -1,0 +1,257 @@
+{
+  "main": {
+    "id": "cb21b059c935a477",
+    "type": "split",
+    "children": [
+      {
+        "id": "f3f3f83d05b88ccc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "470c723a95745e4e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Journal/Games/Pokemon HeartGold.md",
+                "mode": "preview",
+                "source": false
+              }
+            },
+            "group": "01677821d61b967b"
+          },
+          {
+            "id": "45281492e5f320ec",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Stuff/Storage Notes.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a30c02a9e3514c42",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Stuff/Address Book.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "cf81433cea826648",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "32b2569324da05bc",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "file": "Journal/Games/Pokemon HeartGold.md",
+                "options": {
+                  "collapse-filter": true,
+                  "search": "",
+                  "localJumps": 1,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": false,
+                  "showTags": false,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": true,
+                  "colorGroups": [],
+                  "collapse-display": true,
+                  "showArrow": false,
+                  "textFadeMultiplier": 0,
+                  "nodeSizeMultiplier": 1,
+                  "lineSizeMultiplier": 1,
+                  "collapse-forces": true,
+                  "centerStrength": 0.518713248970312,
+                  "repelStrength": 10,
+                  "linkStrength": 1,
+                  "linkDistance": 250,
+                  "scale": 1.7405657879302798,
+                  "close": true
+                }
+              }
+            },
+            "group": "01677821d61b967b"
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "f66f3bca63191d34",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "1dc8a3cb8a72ac65",
+        "type": "leaf",
+        "state": {
+          "type": "file-explorer",
+          "state": {
+            "sortOrder": "alphabetical"
+          }
+        }
+      },
+      {
+        "id": "ffd1399168cd9f95",
+        "type": "leaf",
+        "state": {
+          "type": "search",
+          "state": {
+            "query": "",
+            "matchingCase": false,
+            "explainSearch": false,
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical"
+          }
+        }
+      },
+      {
+        "id": "c7adfdeff5ad24d0",
+        "type": "leaf",
+        "state": {
+          "type": "tag",
+          "state": {
+            "sortOrder": "frequency",
+            "useHierarchy": true
+          }
+        }
+      },
+      {
+        "id": "a1cd1efc99da650c",
+        "type": "leaf",
+        "state": {
+          "type": "bookmarks",
+          "state": {}
+        }
+      },
+      {
+        "id": "3b430676907b98c8",
+        "type": "leaf",
+        "state": {
+          "type": "all-properties",
+          "state": {
+            "sortOrder": "frequency",
+            "showSearch": false,
+            "searchQuery": ""
+          }
+        }
+      }
+    ],
+    "currentTab": 0
+  },
+  "right": {
+    "id": "8cb59de0b40d17f2",
+    "type": "mobile-drawer",
+    "children": [
+      {
+        "id": "cb2d65bba18cea3f",
+        "type": "leaf",
+        "state": {
+          "type": "backlink",
+          "state": {
+            "file": "Journal/Games/Pokemon HeartGold.md",
+            "collapseAll": false,
+            "extraContext": false,
+            "sortOrder": "alphabetical",
+            "showSearch": false,
+            "searchQuery": "",
+            "backlinkCollapsed": false,
+            "unlinkedCollapsed": true
+          }
+        }
+      },
+      {
+        "id": "ba949a756d4e117f",
+        "type": "leaf",
+        "state": {
+          "type": "outgoing-link",
+          "state": {
+            "file": "Journal/Games/Pokemon HeartGold.md",
+            "linksCollapsed": false,
+            "unlinkedCollapsed": true
+          }
+        }
+      },
+      {
+        "id": "687100eac01896fa",
+        "type": "leaf",
+        "state": {
+          "type": "outline",
+          "state": {
+            "file": "Journal/Games/Pokemon HeartGold.md"
+          }
+        }
+      },
+      {
+        "id": "e9570a6e53b29100",
+        "type": "leaf",
+        "state": {
+          "type": "calendar",
+          "state": {}
+        }
+      }
+    ],
+    "currentTab": 2
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "templater-obsidian:Templater": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "command-palette:Open command palette": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "periodic-notes:Open today": false
+    }
+  },
+  "active": "470c723a95745e4e",
+  "lastOpenFiles": [
+    "Knowledge Base/JavaScript/Functions.md",
+    "Stuff/Address Book.md",
+    "Stuff/Storage Notes.md",
+    "Knowledge Base/JavaScript/JavaScript.md",
+    "Journal/Games/Pokemon HeartGold.md",
+    "Journal/Quotes.md",
+    "Knowledge Base/JavaScript/Closures.md",
+    "Knowledge Base/JavaScript/'this' keyword.md",
+    "Knowledge Base/JavaScript/Async JavaScript.md",
+    "Stuff/Stuff.md",
+    "Stuff/Interview Guide.md",
+    "Knowledge Base/DSA/Practice/Strings/Longest Palindromic Substring (LC5).md",
+    "Knowledge Base/DSA/_assets/Longest Palindromic Substring (LC5) 2024-07-15 15.55.36.excalidraw.md",
+    "Knowledge Base/DSA/Practice/Strings/Strings.md",
+    "Knowledge Base/JavaScript/Arrays.md",
+    "Knowledge Base/DSA/Practice/Arrays/Maximum Sum Subarray - Kadane's Algo (LC53).md",
+    "Knowledge Base/DSA/Practice/Arrays/Stock Buy and Sell I (LC121).md",
+    "Stuff/Routine.md",
+    "Stuff/To Learn.md",
+    "Knowledge Base/React/Introduction.md",
+    "Knowledge Base/React/React.md",
+    "Knowledge Base/NextJS/NextJS.md",
+    "Knowledge Base/DSA/Practice/Arrays/Set Matrix Zeroes (LC73).md",
+    "Knowledge Base/DSA/_assets/Set Matrix Zeroes 1.excalidraw.md",
+    "Knowledge Base/DSA/Practice/Arrays/Stock Buy and Sell II (LC122).md",
+    "Knowledge Base/DSA/_assets/Stock Buy and Sell II (LC122) 2024-06-29 02.17.53.excalidraw.md",
+    "Journal/_assets/Pasted image 20240617001511.png",
+    "Journal/_assets/Pasted image 20240617001443.png",
+    "Pasted image 20240613012545.png",
+    "Slick",
+    "NextJS/_assets/nextjslogo.png"
+  ]
+}

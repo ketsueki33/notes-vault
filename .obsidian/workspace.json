@@ -1,0 +1,277 @@
+{
+  "main": {
+    "id": "c00e43a7415ca67d",
+    "type": "split",
+    "children": [
+      {
+        "id": "8530e59594eb9757",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "585d60e325948613",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "181a2f894d337e35",
+    "type": "split",
+    "children": [
+      {
+        "id": "c6a2fdccd23f4fff",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "447b32adeeb27298",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "byCreatedTimeReverse"
+              }
+            }
+          },
+          {
+            "id": "032fbc1c39f0cd25",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "error",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "6037b9d0b8304241",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 257.5
+  },
+  "right": {
+    "id": "5e4a488b592c2e3a",
+    "type": "split",
+    "children": [
+      {
+        "id": "c0b91b6022f586eb",
+        "type": "tabs",
+        "dimension": 45.16746411483254,
+        "children": [
+          {
+            "id": "3fc4015dbdb13289",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          },
+          {
+            "id": "15b66d3a9317dd70",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          },
+          {
+            "id": "e77bc5fb04093484",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "72dd4cecf873d2d6",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": true,
+                "searchQuery": ""
+              }
+            }
+          },
+          {
+            "id": "b4b46aef527bfc42",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
+          },
+          {
+            "id": "4e4fbb73fb3e8738",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "244083fa5497fe9c",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      },
+      {
+        "id": "c75eddb938cd2fc2",
+        "type": "tabs",
+        "dimension": 19.71291866028708,
+        "children": [
+          {
+            "id": "2b3e242b96d41821",
+            "type": "leaf",
+            "state": {
+              "type": "file-properties",
+              "state": {}
+            }
+          }
+        ]
+      },
+      {
+        "id": "d3dd4a38fa1300b1",
+        "type": "tabs",
+        "dimension": 35.119617224880386,
+        "children": [
+          {
+            "id": "5ea4e629aaa1ad2c",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "options": {
+                  "collapse-filter": true,
+                  "search": "",
+                  "localJumps": 2,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": true,
+                  "showTags": false,
+                  "showAttachments": false,
+                  "hideUnresolved": true,
+                  "collapse-color-groups": false,
+                  "colorGroups": [],
+                  "collapse-display": false,
+                  "showArrow": true,
+                  "textFadeMultiplier": -0.9,
+                  "nodeSizeMultiplier": 0.4828125,
+                  "lineSizeMultiplier": 1.325,
+                  "collapse-forces": false,
+                  "centerStrength": 0.552083333333333,
+                  "repelStrength": 11.1458333333333,
+                  "linkStrength": 0.807291666666667,
+                  "linkDistance": 138,
+                  "scale": 0.44444444444444375,
+                  "close": true
+                }
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 315.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "command-palette:Open command palette": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "templater-obsidian:Templater": false,
+      "periodic-notes:Open today": false
+    }
+  },
+  "active": "585d60e325948613",
+  "lastOpenFiles": [
+    "JavaScript/JavaScript.md",
+    "DSA/Practice/Practice.md",
+    "DSA/Practice/Arrays/Arrays.md",
+    "DSA/DSA.md",
+    "LeetCode/LeetCode.md",
+    "Knowledge Base/DSA/Practice/Bit Manipulation/Bit Manipulation.md",
+    "Knowledge Base/DSA/Practice/Arrays/Merge Intervals (LC56).md",
+    "Knowledge Base/DSA/Practice/Strings/Longest Palindromic Substring (LC5).md",
+    "Knowledge Base/DSA/Practice/Practice.md",
+    "Knowledge Base/DSA/Practice/Dynamic Programming/Longest Common Subsequence (LC1143).md",
+    "Cheat Sheet/C++.md",
+    "Stuff/Address Book.md",
+    "Stuff/Noy Maths Tutoring/Noy-Ratio&Proportions.md",
+    "Knowledge Base/DSA/Practice/Bit Manipulation/Number Complement (LC476).md",
+    "Knowledge Base/DSA/Practice/Backtracking/Permutations (LC46).md",
+    "Knowledge Base/LeetCode/LeetCode.md",
+    "Knowledge Base/JavaScript/Error Handling.md",
+    "Knowledge Base/DSA/Practice/Binary Tree/Binary Tree Inorder Traversal (LC94).md",
+    "Knowledge Base/React/Misc Tips & Tricks.md",
+    "_Excalidraw/Drawing 2024-08-22 12.13.20.excalidraw.md",
+    "_Excalidraw/Drawing 2024-08-22 12.13.24.excalidraw.md",
+    "Knowledge Base/DSA/Practice/Dynamic Programming/Dynamic Programming.md",
+    "Knowledge Base/DSA/Practice/Binary Tree/Binary Tree Right Side View (LC199).md",
+    "Knowledge Base/DSA/Practice/Bit Manipulation",
+    "Stuff/Noy Maths Tutoring/_assets/Pasted Image 20240821234605_863.png",
+    "Stuff/To Learn.md",
+    "Knowledge Base/DSA/Practice/Binary Tree/Binary Tree Preorder Traversal (LC144).md",
+    "Knowledge Base/DSA/Practice/Binary Tree/Binary Tree Postorder Traversal (LC145).md",
+    "Stuff/Noy Maths Tutoring/_assets/Pasted Image 20240821234450_860.png",
+    "Stuff/Noy Maths Tutoring/_assets/Pasted Image 20240821234320_840.png",
+    "Stuff/Noy Maths Tutoring/_assets/Pasted Image 20240821233846_147.png",
+    "Stuff/Noy Maths Tutoring/_assets/Pasted Image 20240821203848_531.png",
+    "Stuff/Noy Maths Tutoring/_assets",
+    "Stuff/Noy Maths Tutoring",
+    "Stuff/Noy Maths Tutoring/_assets/Pasted Image 20240821201457_491.png",
+    "Stuff/Noy Maths Tutoring/_assets/Pasted Image 20240821201241_478.png",
+    "Stuff/Noy Maths Tutoring/_assets/Pasted Image 20240821200639_446.png",
+    "Stuff/Noy Maths Tutoring/_assets/Pasted Image 20240821200410_426.png",
+    "Stuff/Noy Maths Tutoring/_assets/Pasted Image 20240821195632_393.png",
+    "Knowledge Base/DSA/Practice/Binary Tree",
+    "Knowledge Base/DSA/Practice/Strings/Untitled",
+    "Knowledge Base/LeetCode",
+    "Knowledge Base/DSA/Practice/Dynamic Programming",
+    "Knowledge Base/DSA/Practice/Backtracking",
+    "Journal/Games",
+    "Knowledge Base/DSA/Practice/Maths"
+  ]
+}

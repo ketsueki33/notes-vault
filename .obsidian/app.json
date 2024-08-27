@@ -1,0 +1,23 @@
+{
+  "promptDelete": false,
+  "alwaysUpdateLinks": true,
+  "spellcheck": true,
+  "newFileLocation": "current",
+  "useTab": true,
+  "userIgnoreFilters": [
+    "_Excalidraw/",
+    "/\\/_[^/]*\\//",
+    "_Templates/",
+    "Knowledge Base/DSA/_assets/"
+  ],
+  "pdfExportSettings": {
+    "includeName": true,
+    "pageSize": "A4",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 51
+  },
+  "propertiesInDocument": "hidden",
+  "attachmentFolderPath": "./",
+  "showInlineTitle": true
+}

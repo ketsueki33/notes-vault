@@ -1,0 +1,13 @@
+{
+  "accentColor": "#a27ef7",
+  "enabledCssSnippets": [
+    "main",
+    "extended-colorschemes"
+  ],
+  "monospaceFontFamily": "JetBrainsMono Nerd Font Mono",
+  "cssTheme": "Minimal",
+  "textFontFamily": "Inter",
+  "interfaceFontFamily": "SF Pro Display",
+  "baseFontSize": 15,
+  "showViewHeader": true
+}
