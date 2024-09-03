@@ -27,7 +27,7 @@ export const connectToDatabase = async () => {
 };
 ```
 
-You can then call `connectTODatabase` function inside any [[Server Actions]] that require connection to the database.
+You can then call `connectTODatabase` function inside any [[Server Actions]] that requires connection to the database.
 
 #### Defining the Models
 We will define a User model as an example. It is good practice to keep all your db Models together. Eg) user model could in the file `user.model.ts` in the folder `database`.
@@ -96,5 +96,43 @@ const UserSchema = new Schema({
 const User = models.User || model("User", UserSchema);
 
 export default User;
+```
+
+#### Defining Types when Populating
+Sometimes where we are querying a collection that has one field as a reference to another collection.. we might populate it or some fields of it.. in this case we can define a new type for a specific query using the existing TypeScript interface for the schema.
+
+Eg)
+```ts
+export interface PopulatedQuestionById
+    extends Omit<IQuestion, "author" | "tags"> {
+    author: Pick<IUser, "_id" | "clerkId" | "username" | "picture">;
+    tags: Pick<ITags, "_id" | "name">[];
+}
+
+export async function getQuestionById(
+    params: GetQuestionByIdParams,
+): Promise<PopulatedQuestionById> {
+    try {
+        connectToDatabase();
+        const { questionId } = params;
+
+        const question = await Question.findById(questionId)
+            .populate({
+                path: "tags",
+                model: Tag,
+                select: "name _id",
+            })
+            .populate({
+                path: "author",
+                model: User,
+                select: "clerkId _id picture username",
+            });
+
+        return question;
+    } catch (error) {
+        console.log(error);
+        throw error;
+    }
+}
 ```
 

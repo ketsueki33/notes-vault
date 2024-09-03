@@ -91,7 +91,7 @@ fetchData(1)
 When dealing with multiple asynchronous operations that can run concurrently (in parallel), using concurrent promises becomes essential. This is where `Promise.all` and `Promise.race` methods come into play.
 
 ###### Promise.all
-`Promise.all` takes an array (or any iterable) of promises and returns a single promise that resolves when all of the promises in the array have resolved, or rejects when any one of the promises in the array rejects.\
+`Promise.all` takes an array (or any iterable) of promises and returns a single promise that resolves when all of the promises in the array have resolved, or rejects when any one of the promises in the array rejects.
 ```js
 const promise1 = new Promise((resolve) => setTimeout(() => resolve("one"), 1000));
 const promise2 = new Promise((resolve) => setTimeout(() => resolve("two"), 2000));

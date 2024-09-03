@@ -1,5 +1,5 @@
+*Map of Content*
 %% Begin Waypoint %%
-- **[[Practice]]**
-- **[[Theory]]**
+- [[Binary Trees]]
 
 %% End Waypoint %%

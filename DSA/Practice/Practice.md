@@ -2,7 +2,7 @@
 %% Begin Waypoint %%
 - **[[Arrays]]**
 - **[[Backtracking]]**
-- **[[Binary Tree]]**
+- **[[Binary Trees/Binary Trees]]**
 - **[[Bit Manipulation]]**
 - **[[Dynamic Programming]]**
 - **[[Linked Lists]]**
