@@ -34,6 +34,7 @@ git clone https://github.com/ketsueki33/notes-vault.git
 - Select "Open folder as vault."
 - Navigate to the folder where you cloned or extracted this repository.
 - Select the folder and click "Open."
+- Make sure to enable plugins.
 
 ---
 

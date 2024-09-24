@@ -159,6 +159,7 @@ void lineByLine(TreeNode *root) {
             if (curr->right)
                 q.push(curr->right);
         }
+        cout<<endl;
     }
 }
 ```

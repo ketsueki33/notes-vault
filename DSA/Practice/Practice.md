@@ -2,12 +2,13 @@
 %% Begin Waypoint %%
 - **[[Arrays]]**
 - **[[Backtracking]]**
-- **[[Binary Trees/Binary Trees]]**
+- **[[Binary Trees]]**
 - **[[Bit Manipulation]]**
 - **[[Dynamic Programming]]**
 - **[[Linked Lists]]**
 - **[[Maths]]**
 - **[[Strings]]**
+- **[[Trie]]**
 
 %% End Waypoint %%
 
@@ -17,18 +18,34 @@
 - [[Maximum Sum Subarray - Kadane's Algo (LC53)|Kadane's Algorithm]]
 
 
-#### All questions for a topic
+#### Topic-wise Questions
 ##### Arrays
+
 ```dataview
-LIST from "DSA/Practice" or "Knowledge Base/DSA/Practice"
-WHERE contains(topics,"Array")
+TABLE WITHOUT ID file.link as Question, difficulty
+from "DSA/Practice" or "Knowledge Base/DSA/Practice"
+WHERE contains(topics,"Array") 
+SORT choice(difficulty = "easy", "1", choice(difficulty = "medium", "2", choice(difficulty = "hard", "3", "other")))
 ```
+
 
 ##### Dynamic Programming
 ```dataview
-LIST from "DSA/Practice" or "Knowledge Base/DSA/Practice"
-WHERE contains(topics,"Dynamic Programming")
+TABLE WITHOUT ID file.link as Question, difficulty
+from "DSA/Practice" or "Knowledge Base/DSA/Practice"
+WHERE contains(topics,"Dynamic Programming") 
+SORT choice(difficulty = "easy", "1", choice(difficulty = "medium", "2", choice(difficulty = "hard", "3", "other")))
 ```
+
+##### Binary Trees
+
+```dataview
+TABLE WITHOUT ID file.link as Question, difficulty
+from "DSA/Practice" or "Knowledge Base/DSA/Practice"
+WHERE contains(topics,"Binary Tree") 
+SORT choice(difficulty = "easy", "1", choice(difficulty = "medium", "2", choice(difficulty = "hard", "3", "other")))
+```
+
 
 
 #### Leetcode Problems

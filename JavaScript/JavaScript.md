@@ -20,4 +20,7 @@
 - [[Closures]]
 - [[Event Loop]]
 
+*Extras:*
+- [[Interview Tidbits]]
+
 todo:-(hoisting)

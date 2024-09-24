@@ -60,6 +60,7 @@ Step 1 - **Prefix Sum Array Construction**:
 - For example, if `chalk = [5, 1, 5]`, the `prefixSum` would be `[5, 6, 11]`.
 This binary search finds the smallest index low where prefixSum[low] is greater than k.
 The binary search efficiently locates the position in the prefixSum array where the remaining chalk would be depleted.
+
 Step 2 - **Modulo Operation**:
 - `prefixSum.back()` gives the total amount of chalk all students use in one full round.
 - The modulo operation reduces the problem to finding the student who will use the remaining chalk `k` after several full rounds.
