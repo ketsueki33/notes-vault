@@ -16,6 +16,8 @@
 	- [[State Management with React Context#Third-Party Context Providers|Third-Party Context Providers]]
 	- [[State Management with React Context#Our Own Context (Theme Context Example)|Our Own Context (Theme Context Example)]]
 - [[Server Actions]]
+- [[Creating API endpoints]]
+- [[Loading State and Suspense]]
 
 
 *extra:*

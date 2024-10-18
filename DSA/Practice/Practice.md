@@ -7,6 +7,7 @@
 - **[[Dynamic Programming]]**
 - **[[Linked Lists]]**
 - **[[Maths]]**
+- **[[Stacks]]**
 - **[[Strings]]**
 - **[[Trie]]**
 
@@ -28,21 +29,20 @@ WHERE contains(topics,"Array")
 SORT choice(difficulty = "easy", "1", choice(difficulty = "medium", "2", choice(difficulty = "hard", "3", "other")))
 ```
 
-
-##### Dynamic Programming
-```dataview
-TABLE WITHOUT ID file.link as Question, difficulty
-from "DSA/Practice" or "Knowledge Base/DSA/Practice"
-WHERE contains(topics,"Dynamic Programming") 
-SORT choice(difficulty = "easy", "1", choice(difficulty = "medium", "2", choice(difficulty = "hard", "3", "other")))
-```
-
 ##### Binary Trees
 
 ```dataview
 TABLE WITHOUT ID file.link as Question, difficulty
 from "DSA/Practice" or "Knowledge Base/DSA/Practice"
 WHERE contains(topics,"Binary Tree") 
+SORT choice(difficulty = "easy", "1", choice(difficulty = "medium", "2", choice(difficulty = "hard", "3", "other")))
+```
+
+##### Dynamic Programming
+```dataview
+TABLE WITHOUT ID file.link as Question, difficulty
+from "DSA/Practice" or "Knowledge Base/DSA/Practice"
+WHERE contains(topics,"Dynamic Programming") 
 SORT choice(difficulty = "easy", "1", choice(difficulty = "medium", "2", choice(difficulty = "hard", "3", "other")))
 ```
 

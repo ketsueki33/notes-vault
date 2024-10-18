@@ -65,15 +65,80 @@ function App() {
 export default App;
 ```
 
-#### How React Works
+#### What is JSX?
+JSX stands for JavaScript XML.
+
+JSX allows us to write HTML elements in JavaScript and place them in the DOM without any `createElement()`  and/or `appendChild()` methods.
+
+JSX converts HTML tags into react elements.
+
+Here are two examples. The first uses JSX and the second does not:
+
+1: JSX:
+```jsx
+const myElement = <h1>I Love JSX!</h1>;
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(myElement);
+```
+
+2:  Without JSX:
+```jsx
+const myElement = React.createElement('h1', {}, 'I do not use JSX!');
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(myElement);
+```
+
+As you can see in the first example, JSX allows us to write HTML directly within the JavaScript code.
+
+JSX is an extension of the JavaScript language based on ES6, and is translated into regular JavaScript at runtime.
+
+TSX is just JSX but for TypeScript.
+#### How React Works?
+##### React Reconciliation
+React **Reconciliation** is the process through which React updates the Browser DOM. It makes the DOM updates faster in React. It updates the virtual DOM first and then uses the diffing algorithm to make efficient and optimized updates in the Real DOM.
+
 Our component tree in the previous example consists of a top level component `App` and a child component `Message`.
 
+##### Virtual DOM
 When our application starts, React takes this component tree and builds a JavaScript data structure called ‘Virtual DOM’. It is different from the actual DOM in the browser. It is a lightweight in-memory representation of our component tree where each node represents a component and its properties. When the state or the data of a component changes, React updates the corresponding node in the Virtual DOM to reflect the new state.
 
-Then it compares the current version of virtual DOM with the previous version to identify the nodes that should be updated, it will then update those nodes in the actual DOM.
+Then it compares the current version of virtual DOM with the previous version to identify the nodes that should be updated, it will then update those nodes in the actual DOM.  
 
-This updating is not done by React itself. Instead it’s done by a companion library - `ReactDOM`
+Comparison is done by *Diffing Algorithm*. This updating is not done by React itself. Instead it’s done by a companion library - `ReactDOM`.
 
+##### Diffing Algorithm
+When diffing two trees, React first compares the two root elements. The behavior is different depending on the types of the root elements:
+
+1. **Elements Of Different Types**:
+	Whenever the root elements have different types, React will tear down the old tree and build the new tree from scratch.
+	
+	Any state associated with the old tree is lost. Any components below the root will also get unmounted and have their state destroyed.
+	```tsx
+	<div>
+	  <Counter />
+	</div>
+	// This will destroy the old `Counter` and remount a new one.
+	<span>
+	  <Counter />
+	</span>
+	```
+ 
+2. **DOM Elements Of The Same Type**
+	When comparing two React DOM elements of the same type, React looks at the attributes of both, keeps the same underlying DOM node, and only updates the changed attributes. For example:
+	```tsx
+	<div className="before" title="stuff" />
+	
+	<div className="after" title="stuff" />
+	```
+	By comparing these two elements, React knows to only modify the `className` on the underlying DOM node.
+	
+	When a component updates, the instance stays the same, so that state is maintained across renders. React updates the props of the underlying component instance to match the new element.
+
+React uses a Breadth-First Search (BFS) algorithm to compare the current and previous Virtual DOMs to update the Real DOM.
+
+React uses optimizations so that a minimal difference can be calculated in **O(N)** efficiently using this Algorithm.
 #### React Ecosystem
 React is a tool ( library ) that is only used for making UI. We need additional tools to build modern applications such as for Routing, making HTTP requests, Managing app state, Form Validation etc.
 

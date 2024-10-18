@@ -28,14 +28,35 @@ export const connectToDatabase = async () => {
 ```
 
 You can then call `connectTODatabase` function inside any [[Server Actions]] that requires connection to the database.
+**Example:**
+```ts
+export async function editQuestion(params: EditQuestionParams) {
+    try {
+        connectToDatabase();
 
+        const { questionId, title, content } = params;
+
+        const question = await Question.findById(questionId);
+
+        if (!question) throw new Error("Question not found");
+
+        question.title = title;
+        question.content = content;
+
+        await question.save();
+    } catch (error) {
+        console.log(error);
+        throw error;
+    }
+}
+```
 #### Defining the Models
 We will define a User model as an example. It is good practice to keep all your db Models together. Eg) user model could in the file `user.model.ts` in the folder `database`.
 
 **1.  Create a TypeScript interface for the schema**
 We will  first create a TypeScript schema so that we know which fields exist. It extends the `Document`object from `mongoose` as  this will also give us access to the default properties and methods that are available in a MongoDB model.
 ```ts
-export interface IUser extends Document {
+export interface IUser {
     name: string;
     username: string;
     email: string;
@@ -71,7 +92,7 @@ const User = models.User || model("User", UserSchema);
 ```ts title="database/user.model.ts"
 import { Schema, models, model, Document } from "mongoose";
 
-export interface IUser extends Document {
+export interface IUser {
     name: string;
     username: string;
     email: string;

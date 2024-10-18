@@ -103,6 +103,22 @@ console.log(person['address']['street']); // 123 Main St
 console.log(person['hobbies'][1]); // traveling
 ```
 
+#### Deleting Object Properties
+We can use the delete operator for this.
+```js
+const details = {
+    name: 'Alex',
+    age: 30,
+    country: 'Canada'
+};
+
+console.log('Original Object:', details);
+// Original Object: { name: 'Alex', age: 30, country: 'Canada' }
+
+delete details.age;
+console.log('Object after deleting age key:', details);
+// Object after deleting age key: { name: 'Alex', country: 'Canada' }
+```
 #### Nested Objects
 Nested objects are objects within objects. This allows you to organize and structure data hierarchically. You can access nested objects and their properties using dot notation or bracket notation. 
 Example: A library object with property books that is an array of book objects.

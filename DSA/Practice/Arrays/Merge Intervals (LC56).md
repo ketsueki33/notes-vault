@@ -4,6 +4,7 @@ leetcode-num: 56
 topics:
   - Array
   - Sorting
+  - Intervals
 ---
 [Problem Link](https://leetcode.com/problems/merge-intervals/)
 

@@ -38,7 +38,7 @@ In **Pascal's triangle**, each number is the sum of the two numbers directly abo
 
 - We initialize the result vector `res` with the first element 1, which is always present in every row.
 - We use a single variable `x` to calculate each element of the row.
-- The key insight is that each element in a row can be calculated from the previous element using the formula: `next_element = previous_element * (row - column) / column`
+- The **key insight** is that each element in a row can be calculated from the previous element using the formula: `next_element = previous_element * (row - column) / column`
 - We start with `x = 1` (the first element) and iteratively calculate each subsequent element.
 - In each iteration:
     - We multiply `x` by `(row - i)` and divide it by `i`.

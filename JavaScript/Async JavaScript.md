@@ -114,22 +114,111 @@ Promise.all([promise1, promise2, promise3])
 `Promise.race` takes an array (or any iterable) of promises and returns a single promise that resolves or rejects as soon as one of the promises in the array resolves or rejects.
 ```js
 const promise1 = new Promise((resolve) => setTimeout(() => resolve("one"), 1000));
-const promise2 = new Promise((resolve) => setTimeout(() => resolve("two"), 2000));
-const promise3 = new Promise((resolve) => setTimeout(() => resolve("max verstappen"), 300));
+const promise2 = new Promise((resolve, reject) =>
+    setTimeout(() => reject("error2"), 2000)
+);
+const promise3 = new Promise((resolve) => setTimeout(() => resolve("three"), 300));
 
 Promise.race([promise1, promise2, promise3])
     .then((value) => {
-        console.log(value); // "max verstappen"
+        console.log(value); // "three"
     })
     .catch((error) => {
         console.error(error);
     });
 ```
+```js
+const promise1 = new Promise((resolve) => setTimeout(() => resolve("one"), 1000));
+const promise2 = new Promise((resolve, reject) =>
+    setTimeout(() => reject("error2"), 200)
+);
+const promise3 = new Promise((resolve) => setTimeout(() => resolve("three"), 3000));
 
+Promise.race([promise1, promise2, promise3])
+    .then((value) => {
+        console.log(value);
+    })
+    .catch((error) => {
+        console.error(error); // error2
+    });
+```
 **Behavior:**
 - Resolves: When the first promise in the iterable resolves. The resulting promise will resolve to the value of the first resolved promise.
 - Rejects: When the first promise in the iterable rejects. The resulting promise will reject with the reason of the first rejected promise.
 
+###### Promise.any
+`Promise.any` takes an array (or any iterable) of promises and returns a single promise that resolves as soon as any of the promises resolves. If all promises are rejected, it will reject with an `AggregateError` containing all the rejection reasons.
+```js
+const promise1 = new Promise((resolve, reject) =>
+    setTimeout(() => reject("error1"), 100)
+);
+const promise2 = new Promise((resolve) => setTimeout(() => resolve("success2"), 200));
+const promise3 = new Promise((resolve, reject) =>
+    setTimeout(() => reject("error3"), 300)
+);
+
+Promise.any([promise1, promise2, promise3])
+    .then((value) => {
+        console.log(value); // "success2"
+    })
+    .catch((error) => {
+        console.error(error);
+    });
+```
+```js
+const promise1 = new Promise((resolve, reject) =>
+    setTimeout(() => reject("error1"), 100)
+);
+const promise2 = new Promise((resolve, reject) =>
+    setTimeout(() => reject("error2"), 200)
+);
+const promise3 = new Promise((resolve, reject) =>
+    setTimeout(() => reject("error3"), 300)
+);
+
+Promise.any([promise1, promise2, promise3])
+    .then((value) => {
+        console.log(value);
+    })
+    .catch((error) => {
+        console.error(error);
+        // [AggregateError: All promises were rejected] {
+        // [errors]: [ 'error1', 'error2', 'error3' ]
+        //   }
+    });
+
+```
+
+**Behavior:**
+- *Resolves:* When the first promise in the iterable resolves. The resulting promise will resolve to the value of the first resolved promise.
+- *Rejects:* Only if all the promises in the iterable reject. In this case, the resulting promise rejects with an `AggregateError`, which contains all the reasons for the individual rejections.
+
+###### Promise.allSettled
+`Promise.allSettled` takes an iterable of promises and returns a promise that resolves when **all of the promises have settled** (either fulfilled or rejected). Unlike `Promise.all`, it does not short-circuit on rejection. Instead, it waits for all promises to complete, and returns an array of result objects.
+
+```js
+const promise1 = new Promise((resolve) => setTimeout(() => resolve("success1"), 1000));
+const promise2 = new Promise((resolve, reject) =>
+    setTimeout(() => reject("error2"), 2000)
+);
+const promise3 = new Promise((resolve) => setTimeout(() => resolve("success3"), 3000));
+
+Promise.allSettled([promise1, promise2, promise3])
+    .then((values) => {
+        console.log(values);
+        // [
+        //     { status: 'fulfilled', value: 'success1' },
+        //     { status: 'rejected', reason: 'error2' },
+        //     { status: 'fulfilled', value: 'success3' }
+        //   ]
+    })
+    .catch((error) => {
+        console.error(error);
+    });
+```
+**Behavior:**
+- *Resolves*: When all promises in the iterable have either resolved or rejected.
+- *Rejects*: Never rejects. No matter what happens (whether promises resolve or reject), `Promise.allSettled` itself always resolves.
 #### Async/Await
 Async functions and the `await` keyword provide a way to work with asynchronous code in a more readable and straightforward manner compared to using Promises directly.
 ##### Async Functions

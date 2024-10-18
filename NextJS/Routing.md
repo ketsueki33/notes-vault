@@ -131,7 +131,7 @@ export default function ProjectDetails({ params }: Props) {
 ```
 The project name will be read from the route and displayed.
 
- ###### [[https://nextjs.org/docs/app/building-your-application/routing/dynamic-routes#catch-all-segments]]
+ ###### [Catch-all segments](https://nextjs.org/docs/app/building-your-application/routing/dynamic-routes#catch-all-segments)
 
 Dynamic Segments can be extended to **catch-all** subsequent segments by adding an ellipsis inside the brackets `[...folderName]`.
 
@@ -143,7 +143,7 @@ For example, `app/shop/[...slug]/page.js` will match `/shop/clothes`, but also `
 |`app/shop/[...slug]/page.js`|`/shop/a/b`|`{ slug: ['a', 'b'] }`|
 |`app/shop/[...slug]/page.js`|`/shop/a/b/c`|`{ slug: ['a', 'b', 'c'] }`|
 
- ###### [[https://nextjs.org/docs/app/building-your-application/routing/dynamic-routes#optional-catch-all-segments]]
+ ###### [Optional Catch-all segments](https://nextjs.org/docs/app/building-your-application/routing/dynamic-routes#optional-catch-all-segments)
 
 Catch-all Segments can be made **optional** by including the parameter in double square brackets: `[[...folderName]]`.
 

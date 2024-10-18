@@ -2,6 +2,7 @@
 %% Begin Waypoint %%
 - [[Maximum Sum Subarray - Kadane's Algo (LC53)]]
 - [[Merge Intervals (LC56)]]
+- [[Next Permutation (LC31)]]
 - [[Pascal's Triangle (LC118)]]
 - [[Pascal's Triangle II (LC119)]]
 - [[Set Matrix Zeroes (LC73)]]

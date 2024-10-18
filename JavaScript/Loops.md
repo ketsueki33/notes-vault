@@ -9,7 +9,18 @@ const print1to10 = () => {
     }
 };
 ```
+**Other variations:**
+```ts
+const fruits = ["Apple", "Peach", "Watermelon", "Jackfruit", "Papaya"];
 
+for (let fruit of fruits) {
+    console.log(fruit);
+}
+
+for (let index in fruits) {
+    console.log(fruits[index]);
+}
+```
 #### While Loop
 Ex) Write a program to print numbers from 10 to 1.
 ```js

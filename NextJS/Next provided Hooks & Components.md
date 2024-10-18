@@ -26,11 +26,27 @@ export default function Page() {
 }
 ```
 
-
+##### `useSearchParams()`
+`useSearchParams` is a **Client Component** hook that lets you read the current URL's **query string**.
+```tsx
+'use client'
+ 
+import { useSearchParams } from 'next/navigation'
+ 
+export default function SearchBar() {
+  const searchParams = useSearchParams()
+ 
+  const search = searchParams.get('search')
+ 
+  // URL -> `/dashboard?search=my-project`
+  // `search` -> 'my-project'
+  return <>Search: {search}</>
+}
+```
 #### Components provided by NextJS
 
 ##### `<Link>`
-`<Link>` is a React component that extends the HTML `<a>` element to provide [[https://nextjs.org/docs/app/building-your-application/routing/linking-and-navigating#2-prefetching]] and client-side navigation between routes. It is the primary way to navigate between routes in Next.js.
+`<Link>` is a React component that extends the HTML `<a>` element to provide [prefetching](https://nextjs.org/docs/app/building-your-application/routing/linking-and-navigating#2-prefetching) and client-side navigation between routes. It is the primary way to navigate between routes in Next.js.
 
 ```tsx
 import Link from 'next/link'
@@ -40,4 +56,25 @@ export default function Page() {
 }
 ```
 
+##### `<Image>`
+The Next.js Image component extends the HTML `<img>` element with features for automatic image optimization:
 
+- **Size Optimization:** Automatically serve correctly sized images for each device, using modern image formats like WebP and AVIF.
+- **Visual Stability:** Prevent [layout shift](https://nextjs.org/learn/seo/web-performance/cls) automatically when images are loading.
+- **Faster Page Loads:** Images are only loaded when they enter the viewport using native browser lazy loading, with optional blur-up placeholders.
+- **Asset Flexibility:** On-demand image resizing, even for images stored on remote servers
+
+```tsx
+import Image from 'next/image'
+ 
+export default function Page() {
+  return (
+    <Image
+      src="https://s3.amazonaws.com/my-bucket/profile.png"
+      alt="Picture of the author"
+      width={500}
+      height={500}
+    />
+  )
+}
+```

@@ -2,6 +2,8 @@
 
 *Map of Content*
 - [[Introduction]]
+- [[Building Components]]
+- [[Hooks]]
 
 *Extra:*
 - [[Misc Tips & Tricks]]

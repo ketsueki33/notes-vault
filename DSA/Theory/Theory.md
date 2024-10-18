@@ -1,6 +1,6 @@
-*Map of Content*
-%% Begin Waypoint %%
-- [[Binary Trees]]
-- [[BinaryTreesExcali]]
+***Map of Content***
 
-%% End Waypoint %%
+- **[[Stacks]]**
+- **[[Binary Trees]]**
+
+
