@@ -128,7 +128,7 @@ NextJS offers the flexibility of choosing the runtime. You can do so by putting 
 export const runtime = 'edge' // 'nodejs'(default)
 ```
 
-Depending on the above-discussed factors, such as the rendering environment, and the time period ( build and run time ), ==NextJS provides three strategies for rendering on the server:==
+Depending on the above-discussed factors, such as the rendering environment, and the time period ( build and run time ), **NextJS provides three strategies for rendering on the server:**
 
 #### 1. Static Site Generation
 SSG happens at build time on the server.  

@@ -1,5 +1,7 @@
 In JavaScript, a closure is a powerful feature where an inner function has access to the outer (enclosing) function's variables and parameters, even after the outer function has finished executing. Closures are created whenever a function is created within another function, and they allow for the encapsulation of state and functionality.
 
+A **Closure** is the combination of a function bundled together (enclosed) with references to its surrounding state (the lexical environment).
+
 **Example)**
 ```js
 function outerFunction() {
@@ -15,6 +17,13 @@ function outerFunction() {
 const myFunction = outerFunction();
 myFunction(); // Output: I am outside!
 ```
+
+**Uses of Closures:**
+- Module Pattern
+- Memoization
+- Currying
+- Maintaining state in async operations.
+
 
 #### More Examples
 
@@ -72,7 +81,7 @@ const arrayOfFunctions = (n) => {
 const nFunctions = arrayOfFunctions(5);
 
 for (let i = 0; i < 5; i++) {
-    nFunctions[[|i]];
+    nFunctions[i]();
 }
 //Output:
 // 0
@@ -160,3 +169,6 @@ console.log(memo(5));
 // { '1': 1, '2': 2, '3': 6 }
 // 120
 ```
+
+#### Currying
+#todo

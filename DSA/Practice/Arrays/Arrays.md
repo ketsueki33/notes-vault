@@ -1,5 +1,6 @@
 ###### *All Problems*
 %% Begin Waypoint %%
+- [[Construct Product Matrix (LC2906)]]
 - [[Maximum Sum Subarray - Kadane's Algo (LC53)]]
 - [[Merge Intervals (LC56)]]
 - [[Next Permutation (LC31)]]

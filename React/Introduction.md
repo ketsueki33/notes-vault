@@ -2,7 +2,7 @@
 #### What is React?
 React is a JavaScript library for building dynamic and interactive UI.
 
-JavaScript( Vanilla ) is used to manipulate items in the DOM ( Document object Model) and change the page content in response to user actions. But as our application grows, working with the DOM can become quite complex and challenging.
+JavaScript( Vanilla ) is used to manipulate items in the DOM (Document Object Model) and change the page content in response to user actions. But as our application grows, working with the DOM can become quite complex and challenging.
 
 This is where React comes in. With React, we don’t have to worry about querying and updating DOM elements. Instead, we describe a web page using small reusable components and React will take care of creating and updating DOM elements.
 
@@ -66,7 +66,7 @@ export default App;
 ```
 
 #### What is JSX?
-JSX stands for JavaScript XML.
+JSX stands for JavaScript XML (Extended Markup Language).
 
 JSX allows us to write HTML elements in JavaScript and place them in the DOM without any `createElement()`  and/or `appendChild()` methods.
 
@@ -92,7 +92,7 @@ root.render(myElement);
 
 As you can see in the first example, JSX allows us to write HTML directly within the JavaScript code.
 
-JSX is an extension of the JavaScript language based on ES6, and is translated into regular JavaScript at runtime.
+JSX is an extension of the JavaScript language based on ES6, and is translated into regular JavaScript at runtime. Therefore, **JSX (JavaScript XML) is just syntactic sugar for the `React.createElement` function.**
 
 TSX is just JSX but for TypeScript.
 #### How React Works?

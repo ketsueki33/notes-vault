@@ -5,6 +5,7 @@ title: Binary Trees
 - [[Balanced Binary Tree (LC110)]]
 - [[Binary Tree Inorder Traversal (LC94)]]
 - [[Binary Tree Level Order Traversal (LC102)]]
+- [[Binary Tree Maximum Path Sum (LC124)]]
 - [[Binary Tree Postorder Traversal (LC145)]]
 - [[Binary Tree Preorder Traversal (LC144)]]
 - [[Binary Tree Right Side View (LC199)]]
@@ -16,6 +17,7 @@ title: Binary Trees
 - [[Maximum Depth of Binary Tree (LC104)]]
 - [[Maximum Width of Binary Tree (LC662)]]
 - [[Same Tree (LC100)]]
+- [[Symmetric Tree (LC101)]]
 - [[Vertical Order Traversal of a Binary Tree (LC987)]]
 
 %% End Waypoint %%

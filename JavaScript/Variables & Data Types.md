@@ -49,12 +49,18 @@ obj.c = 3;        // This works! You can add new properties
 
 #### Difference between `let` and `var` 
 
-The difference between `let` and `var` is in the **scope** of the variables they create:
+| Feature                        | `let`                                                                                      | `var`                                                                                            |
+| ------------------------------ | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------ |
+| **Scope**                      | Variables declared by `let` are **only available inside the block** where they’re defined. | Variables declared by `var` are **available throughout the function** in which they’re declared. |
+| **Hoisting**                   | Hoisted to top of block, but in Temporal Dead Zone (TDZ) until initialized                 | Hoisted to top of function or global scope, can be accessed before declaration (undefined)       |
+| **Redeclaration**              | Not allowed within the same scope                                                          | Allowed within the same scope                                                                    |
+| **Initialization Requirement** | Must be initialized after declaration, otherwise causes ReferenceError                     | Can be accessed without initialization, defaults to `undefined`                                  |
+| **Global Object Property**     | Does not attach to the global object when declared in global scope                         | Attaches to the global object when declared in global scope                                      |
+| **Temporal Dead Zone (TDZ)**   | Exists in the TDZ from start of block until initialization                                 | No TDZ, accessible immediately after hoisting                                                    |
 
-- Variables declared by `let` are **only available inside the block** where they’re defined.
-- Variables declared by `var` are **available throughout the function** in which they’re declared.
+*Let's see the first difference (scope) in an example:*
 
-Consider the difference between these two JavaScript functions:
+Consider these two JavaScript functions:
 ```js
 function varScoping() {
   var x = 1;
@@ -98,25 +104,25 @@ function varAndLetScoping() {
 A `var` variable will be available thoroughout the function body in which it is defined, no matter how deeply nested its definition. A `let` variable will only be available within the same block where it is defined. See below:
 ```js
 function nestedScopeTest() {
-  if (true) {
-    var functionVariable = 1;
-    let blockVariable = 2;
-
-    console.log(functionVariable); // will print 1
-    console.log(blockVariable); // will print 2
-
     if (true) {
-      console.log(functionVariable); // will print 1
-      console.log(blockVariable); // will print 2
-    }
-  }
+        var functionVariable = 1;
+        let blockVariable = 2;
 
-  console.log(functionVariable); // will print 1
-  console.log(blockVariable); // will throw a reference error
+        console.log(functionVariable); // 1
+        console.log(blockVariable); // 2
+
+        if (true) {
+            console.log(functionVariable); // 1
+            console.log(blockVariable); // 2
+        }
+    }
+
+    console.log(functionVariable); // 1
+    console.log(blockVariable); // ReferenceError: blockVariable is not defined
 }
 ```
 
-This works because the `var` declaration of `functionVariable` is [hoisted](https://developer.mozilla.org/en-US/docs/Glossary/Hoisting) to the top level of `nestedScopeTest()` before execution, but the `let` declaration of `blockVariable` is not.
+This works because the `var` declaration of `functionVariable` is [[Hoisting|hoisted]] to the top level of `nestedScopeTest()` before execution, but the `let` declaration of `blockVariable` is not.
 
 The behavior of `var` can be useful in some cases, but is quite different from other programming languages, and can cause difficult-to-resolve bugs. The more recently introduced `let` keyword allows for more precise and predictable variable scoping, and allows programmers to safely reuse names for temporary variables within the same function.
 
@@ -134,6 +140,111 @@ console.log(this.y); // will print undefined
 - `let` and `const` are consistent, have more commonly known scoping rules.
 - No confusion with hoisting
 - More predictable and safer behaviour compared to `var`
+
+#### Difference between let and const
+There are two main differences between `let` and `const`:
+
+| Feature                         | `let`                                     | `const`                                      |
+|---------------------------------|-------------------------------------------|----------------------------------------------|
+| **Reassignment**                | Can be reassigned                         | Cannot be reassigned after initial declaration |
+| **Initialization Requirement**  | Can be declared without an initial value  | Must be initialized at the time of declaration |
+
+
+> [!NOTE] let / const and Global object
+> Variables declared with `let` and `const` are stored in a separate memory space. Not in the global object. 
+> 
+> This means they are not a property of the global object ( unlike in case of `var`)
+
+#### Reassigning Variables
+```js
+let test = "XYZ";
+console.log(test); // XYZ
+test = "ABC";
+console.log(test); // ABC
+```
+
+If we try to reassign `const` we will get the following `TypeError`:
+
+> [!danger] Uncaught TypeError: Assignment to constant variable.
+
+#### Shadowing
+**Shadowing** in JavaScript occurs when a variable declared in an inner scope (such as a function or block) has the same name as a variable in an outer scope. The inner variable "shadows" or overrides the outer variable within its own scope, meaning that references to the variable name in the inner scope will refer to the inner variable, effectively hiding the outer variable.
+##### Shadowing with let/const
+```js
+let message = "Hello from global scope!";
+
+{
+    let message = "Hello from block scope!"; // Shadows the outer 'message'
+    console.log(message); // Logs: "Hello from block scope!"
+}
+
+console.log(message); // Logs: "Hello from global scope!"
+```
+
+In this example:
+
+- The global variable `message` is defined with the value `"Hello from global scope!"`.
+- Inside the block, another `message` variable is defined within the block scope, with the value `"Hello from block scope!"`.
+- The function logs `"Hello from block scope!"`, as it references the local `message` variable instead of the global one.
+- Outside of the function, `console.log(message);` refers to the global `message`, which is unchanged.
+##### Shadowing with var
+```js
+var message = "Hello from global scope!";
+
+{
+    var message = "Hello from block scope!"; // Shadows the outer 'message'
+    console.log(message); // Logs: "Hello from block scope!"
+}
+
+console.log(message); // Logs: "Hello from block scope!"
+```
+*In this example:*
+- **Global Scope Declaration**:
+    - `var message = "Hello from global scope!";` declares a global variable `message` and initializes it with `"Hello from global scope!"`.
+- **Block Scope (But Using `var`)**:
+    - Inside the block `{}`, we declare `var message = "Hello from block scope!";`.
+    - Since `var` is **not block-scoped**, this declaration does not create a new variable limited to the block. Instead, it **reassigns** the existing global variable `message` to `"Hello from block scope!"`.
+- **First `console.log(message);` Inside the Block**:
+    - When `console.log(message);` is called inside the block, it logs `"Hello from block scope!"`.
+    - This is because `message` has been reassigned globally to `"Hello from block scope!"` within this block.
+- **Second `console.log(message);` Outside the Block**:
+    - When we log `message` outside the block, it still outputs `"Hello from block scope!"`.
+    - Since `var` is function-scoped (not block-scoped), the block assignment affected the global `message` variable itself.
+    - So, the change made inside the block persists outside the block, and we see `"Hello from block scope!"` again.
+
+##### Illegal Shadowing
+Illegal shadowing occurs in JavaScript when you attempt to declare a variable with `var` that has the same name as a variable already declared with `let` or `const` in a parent scope.
+```js
+let a = "Global Scope";
+
+{
+    var a = "Block Scope"; // ❌ SyntaxError: Identifier 'a' has already been declared
+}
+```
+
+This happens because any variable shadowing it's parent's variable should not cross the boundary of its parent. Since `var` is function scoped while `let` is block scoped, the inner scope is in a way trying to re-declare the variable `a` which is not allowed. If the block were within a function, it would have been valid.
+```js
+let a = "Global Scope";
+
+function b() {
+    var a = "Function Scope";
+    console.log(a); // ✅ Logs: "Function Scope"
+}
+
+b();
+```
+
+The inverse (declare a variable with `let` or `const` that has the same name as a variable already declared with `var` in a parent scope) is also valid.
+```js
+const a = "Global Scope";
+
+{
+    let a = "Block Scope"; // ✅ logs: "Block Scope"
+    console.log(a);
+}
+
+console.log(a); // ✅ logs: "Global Scope"
+```
 
 #### Data Types
 ##### Primitive Data Types
@@ -210,15 +321,12 @@ console.log(typeof greet); // function
 > [!NOTE]
 > Even though `typeof(function)` returns `function`, functions are objects.
 
-#### Reassigning Variables
-```js
-let test = "XYZ";
-console.log(test); // XYZ
-test = "ABC";
-console.log(test); // ABC
-```
 
-If we try to reassign `const` we will get the following `TypeError`:
+#### null vs undefined vs not defined
 
-> [!danger] Uncaught TypeError: Assignment to constant variable.
+| Term          | Description                                                                                                                                                                                                                                                                                                               |
+| ------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| null          | Represents an intentional absence of any object or value. It is explicitly assigned to a variable to indicate "no value" or "nothing." Type is `object`.                                                                                                                                                       |
+| undefined     | Automatically assigned to a variable by JavaScript when it is declared but not yet assigned a value. Type is `undefined`. Although it is possible to assign `undefined` manually, it's not considered good practice because `undefined` is typically used by JavaScript to indicate an uninitialized variable. |
+| "not defined" | Refers to an undeclared variable or identifier. Trying to access a variable or identifier that has never been declared results in a `ReferenceError` saying it is "not defined."                                                                                                                               |
 

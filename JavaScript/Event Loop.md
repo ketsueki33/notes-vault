@@ -3,8 +3,7 @@ JavaScript is single threaded. It can only process one thing at a time. Then how
 **JavaScript Engine has a mechanism  to handle incoming tasks which includes the Event Loop, Call Stack and Task Queue**
 
 #### Call Stack
-The call stack keeps track of what's being executed along with their order. When a function is invoked or called, it gets added to the top of the Call Stack. It starts executing and once the function 
-is done executing, it gets removed from the stack. 
+The call stack keeps track of what's being executed along with their order. When a function is invoked or called, it gets added to the top of the Call Stack. It starts executing and once the function is done executing, it gets removed from the stack. 
 
 So, if the function takes 5 seconds to execute, it will block the Call Stack for 5 seconds. Here is where Asynchronous functions come in. They are sent to some other entity ( like  the Web API of a  browser) and it gets removed from the call stack immediately. It is now the responsibility of this entity to finish the execution of that function. The Call Stack is not blocked during this and continues executing the next functions. 
 

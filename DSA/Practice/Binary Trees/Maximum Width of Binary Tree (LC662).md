@@ -14,7 +14,7 @@ topics:
 ##### Optimal BFS Approach
 This is an improvement over the [[#BFS Approach(using unsigned long long to handle int overflow)|approach below]] so see it first. 
 
-We don't have to include null nodes left a non-null node in our `maxWidth`. Therefore we can adjust the `xIndex` so that the first non-null gets the `xIndex` as `1`.
+We don't have to include the null nodes to the left of a non-null node in our `maxWidth`. Therefore we can adjust the `xIndex` so that the first non-null gets the `xIndex` as `1`.
 
 ![[../../_assets/Pasted image 20240904004715.png|550]]
 

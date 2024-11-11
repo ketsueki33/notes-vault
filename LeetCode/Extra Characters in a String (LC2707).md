@@ -42,8 +42,8 @@ Return _the **minimum** number of extra characters left over if you break up_ `s
 - For each starting index `i`, the default assumption is that the current character `s[i]` is "extra," so the value `dp[i]` is initialized as `1 + dp[i + 1]`, which adds 1 extra character and moves to the next index.
 - The algorithm then tries to match every substring starting from `i` to `j` with words in the dictionary. If a substring `s[i:j]` is found in the dictionary (`hash.count(curr) == 1`), it updates `dp[i]` by minimizing the result with `dp[j + 1]`, meaning no extra characters are counted for this valid word.
 
-_TC ->_ O( n )  
-_SC ->_ O( words )
+*TC ->* O( n$^{3}$ )
+*SC ->* O( words )
 
 ```cpp title=Code
 class Solution {

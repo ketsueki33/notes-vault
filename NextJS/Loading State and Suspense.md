@@ -48,7 +48,7 @@ Simply, create a `loading.tsx` file beside the `page.tsx` and NextJS will use th
 
 It will still be rendered as a child of the closest `layout.tsx` file.
 
-**Example)**
+**Example:**
 ```tsx title="app/(root)/(home)/loading.tsx"
 import { Skeleton } from "@/components/ui/skeleton";
 

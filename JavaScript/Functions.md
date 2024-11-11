@@ -1,6 +1,7 @@
-Generally speaking, a function is a "subprogram" that can be _called_ by code external (or internal, in the case of recursion) to the function. Like the program itself, a function is composed of a sequence of statements called the _function body_. Values can be _passed_ to a function as parameters, and the function will _return_ a value.
+Generally speaking, a function is a "subprogram" that can be _called_ by code external (or internal, in the case of recursion) to the function. Like the program itself, a function is composed of a sequence of statements called the _function body_. Values can be _passed_ to a function as parameters, and the function will _return_ a value. Every time a function is called, it creates its own *execution context*. This execution context is then destroyed once the function finishes executing.
 
 In JavaScript, functions are [first-class objects](https://developer.mozilla.org/en-US/docs/Glossary/First-class_Function), because they can be passed to other functions, returned from functions, and assigned to variables and properties. They can also have properties and methods just like any other object. What distinguishes them from other objects is that functions can be called.
+
 
 #### Function Declaration
 syntax:
@@ -24,20 +25,6 @@ The `function` keyword can be used to define a function inside an expression.
 
 A `function` expression is very similar to, and has almost the same syntax as, a [[Functions#Function Declaration|Function declaration]]. The main difference between a `function` expression and a `function` declaration is the _function name_, which can be omitted in `function` expressions to create _anonymous_ functions. A `function` expression can be used as an [IIFE](https://www.udacity.com/blog/2023/03/immediately-invoked-function-expressions-iife-in-javascript.html) (Immediately Invoked Function Expression) which runs as soon as it is defined.
 
-
-> [!INFO] Function expression and Hoisting
->  Function expressions in JavaScript are not hoisted, unlike function declarations. You can't use function expressions before you create them:
->  ```js
->  console.log(notHoisted); // undefined
-> // Even though the variable name is hoisted,
-> // the definition isn't. so it's undefined.
-> notHoisted(); // TypeError: notHoisted is not a function
-> 
-> var notHoisted = function () {
->   console.log("bar");
-> };
-> ```
-
 Ex) Write a function expression to concatenate two strings and return it.
 ```js
 const concat = function (s1, s2) {
@@ -59,15 +46,15 @@ const checkString = (s, c) => {
 
 #### Difference between Regular Functions and Arrow Functions
 
-| Feature           | Regular Function                                                                                                                  | Arrow Function                                                                                                                  |
-| ----------------- | --------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| `this` Value      | `this` is dynamic and depends on how the function is invoked: global object, method owner, context of call/apply, or new instance | the `this` keyword refers to the object from which you define the function and remains constant regardless of invocation method |
-| Constructors      | Can be used as constructors to create new object instances (e.g., `new Car()`)                                                    | Cannot be used as constructors; attempting to use `new` with an arrow function results in a `TypeError`                         |
-| `arguments`Object | Has a special `arguments` object that contains all passed arguments                                                               | Does not have an `arguments` object; accesses arguments lexically from the outer function or uses rest parameters (`...args`)   |
-| Implicit Return   | Requires an explicit `return` statement to return values; otherwise returns `undefined`                                           | Allows implicit return for single expressions when curly braces are omitted                                                     |
-| Methods           | Regular functions are used to define methods in classes or objects, but can lose `this` context when used as callbacks            | Arrow functions bind `this` lexically, ensuring `this` context is maintained when used as methods or callbacks                  |
+| Feature           | Regular Function                                                                                                                  | Arrow Function                                                                                                                                |
+| ----------------- | --------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| `this` Value      | `this` is dynamic and depends on how the function is invoked: global object, method owner, context of call/apply, or new instance | Inherits `this` from the enclosing scope (lexical `this`). It captures the `this` value from its surrounding context at the time it's created |
+| Constructors      | Can be used as constructors to create new object instances (e.g., `new Car()`)                                                    | Cannot be used as constructors; attempting to use `new` with an arrow function results in a `TypeError`                                       |
+| `arguments`Object | Has a special `arguments` object that contains all passed arguments                                                               | Does not have an `arguments` object; accesses arguments lexically from the outer function or uses rest parameters (`...args`)                 |
+| Implicit Return   | Requires an explicit `return` statement to return values; otherwise returns `undefined`                                           | Allows implicit return for single expressions when curly braces are omitted                                                                   |
+| Methods           | Regular functions are used to define methods in classes or objects, but can lose `this` context when used as callbacks            | Arrow functions bind `this` lexically, ensuring `this` context is maintained when used as methods or callbacks                                |
 For more in-depth differences: [refer this](https://dmitripavlutin.com/differences-between-arrow-and-regular-functions/)
-
+For examples for on `this` keyword works differently: [['this' keyword#'this' keyword in Arrow Functions v/s Regular Functions|'this' keyword in Arrow Functions v/s Regular Functions]]
 #### Default Parameters
 Default parameter values allow you to initialize parameters with default values if no value or `undefined` is passed when the function is called. This feature helps make your code more robust and reduces the need for additional checks for `undefined` values.
 

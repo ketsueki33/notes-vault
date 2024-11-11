@@ -153,7 +153,7 @@ library.books.forEach((ele) => console.log(ele.title));
 ```
 
 #### Objects and [['this' keyword|'this']] keyword 
-The `this` keyword in JavaScript refers to the context in which a function is called. Its value can vary depending on how a function is invoked. When used within an object, this refers to the object itself, allowing you to access its properties and methods from within its methods.
+The `this` keyword in JavaScript refers to the context in which a function is called. Its value inside object methods can vary depending on type of function (regular or arrow) and how it is called. 
 ```js
 const person = {
     name: 'Alice',
@@ -273,3 +273,9 @@ entries.forEach(([key, value]) => {
 // age: 30
 // occupation: Developer
 ```
+
+#### Prototypal inheritance
+##### What is a prototype?
+In JavaScript, objects have a special hidden property `[[Prototype]]` (as named in the specification), that is either `null` or references another object. That object is called “a prototype”.
+
+#todo
