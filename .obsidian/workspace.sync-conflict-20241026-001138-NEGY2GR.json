@@ -1,0 +1,341 @@
+{
+  "main": {
+    "id": "c00e43a7415ca67d",
+    "type": "split",
+    "children": [
+      {
+        "id": "462a2ec49f9933b0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d9589fcc9d4d74c9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Knowledge Base/HTML/HTML.md",
+                "mode": "preview",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "HTML"
+            }
+          },
+          {
+            "id": "5ff21f9ccfa91bd0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Journal/Games/FB.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "FB"
+            }
+          },
+          {
+            "id": "2ca99aa8ff349637",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Stuff/Address Book.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Address Book"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "181a2f894d337e35",
+    "type": "split",
+    "children": [
+      {
+        "id": "c6a2fdccd23f4fff",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "447b32adeeb27298",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "byCreatedTimeReverse"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "032fbc1c39f0cd25",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "6037b9d0b8304241",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 272.5
+  },
+  "right": {
+    "id": "5e4a488b592c2e3a",
+    "type": "split",
+    "children": [
+      {
+        "id": "c0b91b6022f586eb",
+        "type": "tabs",
+        "dimension": 45.16746411483254,
+        "children": [
+          {
+            "id": "3fc4015dbdb13289",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
+            }
+          },
+          {
+            "id": "15b66d3a9317dd70",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Knowledge Base/HTML/HTML.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of HTML"
+            }
+          },
+          {
+            "id": "e77bc5fb04093484",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "72dd4cecf873d2d6",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": true,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "b4b46aef527bfc42",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {},
+              "icon": "spreadsheet",
+              "title": "Advanced Tables"
+            }
+          },
+          {
+            "id": "4e4fbb73fb3e8738",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Knowledge Base/NextJS/Setup.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Setup"
+            }
+          },
+          {
+            "id": "244083fa5497fe9c",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Knowledge Base/NextJS/Setup.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Setup"
+            }
+          }
+        ],
+        "currentTab": 1
+      },
+      {
+        "id": "c75eddb938cd2fc2",
+        "type": "tabs",
+        "dimension": 22.77511961722488,
+        "children": [
+          {
+            "id": "2b3e242b96d41821",
+            "type": "leaf",
+            "state": {
+              "type": "file-properties",
+              "state": {
+                "file": "Knowledge Base/HTML/HTML.md"
+              },
+              "icon": "lucide-info",
+              "title": "File properties for HTML"
+            }
+          }
+        ]
+      },
+      {
+        "id": "d3dd4a38fa1300b1",
+        "type": "tabs",
+        "dimension": 32.057416267942585,
+        "children": [
+          {
+            "id": "5ea4e629aaa1ad2c",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "file": "Knowledge Base/HTML/HTML.md",
+                "options": {
+                  "collapse-filter": true,
+                  "search": "",
+                  "localJumps": 2,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": true,
+                  "showTags": false,
+                  "showAttachments": false,
+                  "hideUnresolved": true,
+                  "collapse-color-groups": false,
+                  "colorGroups": [],
+                  "collapse-display": false,
+                  "showArrow": true,
+                  "textFadeMultiplier": -0.9,
+                  "nodeSizeMultiplier": 0.4828125,
+                  "lineSizeMultiplier": 1.325,
+                  "collapse-forces": false,
+                  "centerStrength": 0.552083333333333,
+                  "repelStrength": 11.1458333333333,
+                  "linkStrength": 0.807291666666667,
+                  "linkDistance": 138,
+                  "scale": 0.1316872427983537,
+                  "close": true
+                }
+              },
+              "icon": "lucide-git-fork",
+              "title": "Graph of HTML"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 290.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "command-palette:Open command palette": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "templater-obsidian:Templater": false,
+      "periodic-notes:Open today": false
+    }
+  },
+  "active": "d9589fcc9d4d74c9",
+  "lastOpenFiles": [
+    "Stuff/Address Book.md",
+    "Knowledge Base/HTML/HTML.md",
+    "Knowledge Base/DSA/Theory/Stacks.md",
+    "Knowledge Base/LeetCode/Maximum Width Ramp (LC962).md",
+    "Knowledge Base/HTML",
+    "Knowledge Base/LeetCode/LeetCode.md",
+    "Knowledge Base/LeetCode/Flip Equivalent Binary Trees (LC951).md",
+    "Journal/Games/FB.md",
+    "Stuff/Stuff.md",
+    "Journal/Daily/2024/06-June/2024-06-16-Sunday.md",
+    "Journal/Daily/2024/06-June/2024-06-17-Monday.md",
+    "Journal/Daily/2024/06-June/2024-06-21-Friday.md",
+    "Journal/Quotes.md",
+    "Journal/Pickup.md",
+    "Knowledge Base/LeetCode/Cousins in Binary Tree II (LC2641).md",
+    "Knowledge Base/JavaScript/Arrays.md",
+    "Knowledge Base/JavaScript/JavaScript.md",
+    "Knowledge Base/LeetCode/Find Kth Bit in Nth Binary String (LC1545).md",
+    "Knowledge Base/LeetCode/Kth Largest Sum in a Binary Tree (LC2583).md",
+    "Knowledge Base/DSA/Practice/Stacks/Next Greater Element I (LC496).md",
+    "Knowledge Base/DSA/Practice/Practice.md",
+    "Knowledge Base/DSA/Practice/Binary Trees/Binary Tree Maximum Path Sum (LC124).md",
+    "Knowledge Base/DSA/Practice/Binary Trees/Symmetric Tree (LC101).md",
+    "Knowledge Base/React/Building Components.md",
+    "Knowledge Base/DSA/Practice/Binary Trees/Maximum Width of Binary Tree (LC662).md",
+    "Knowledge Base/LeetCode/Split a String Into the Max Number of Unique Substrings (LC1593).md",
+    "Knowledge Base/DSA/_assets/Pasted image 20241016134000.png",
+    "Knowledge Base/DSA/Theory/Pasted image 20241016133908.png",
+    "Knowledge Base/DSA/Practice/Stacks",
+    "Knowledge Base/DSA/_assets/stack_vis.png",
+    "Knowledge Base/React/_assets/react_logo.png",
+    "Knowledge Base/DSA/_assets/Pasted image 20240904003325.png",
+    "Knowledge Base/DSA/_assets/Binary Trees 2024-08-31 20.00.36.excalidraw.png",
+    "Knowledge Base/DSA/_assets/Pasted image 20240831201426.png",
+    "Knowledge Base/Python",
+    "Untitled",
+    "Knowledge Base/DSA/Practice/Trie",
+    "Knowledge Base/DSA/_assets/XOR Queries of a Subarrray.png",
+    "Knowledge Base/DSA/_assets/Pasted image 20240904004715.png",
+    "Knowledge Base/DSA/Practice/Binary Trees/Pasted image 20240904004400.png",
+    "Knowledge Base/DSA/Theory",
+    "Knowledge Base/DSA/Practice/Bit Manipulation",
+    "Stuff/Noy Maths Tutoring/_assets",
+    "Stuff/Noy Maths Tutoring",
+    "Knowledge Base/DSA/Practice/Binary Trees"
+  ]
+}

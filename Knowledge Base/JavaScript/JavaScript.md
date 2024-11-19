@@ -26,7 +26,7 @@
 *Extras:*
 - [[Interview Tidbits]]
 
-todo:- currying (in closures)
+todo:- currying (in closures), prototypal inheritance (objects)
 
 ### Introduction
 JavaScript is a scripting or programming language that allows you to implement complex features on web pages. It is the third layer of the layer cake of standard web technologies (after [[../HTML|HTML]] and [[../CSS/CSS|CSS]]).

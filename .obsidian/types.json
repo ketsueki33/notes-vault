@@ -28,6 +28,7 @@
     "origin": "text",
     "is-gallery": "checkbox",
     "topics": "multitext",
-    "leetcode-num": "number"
+    "leetcode-num": "number",
+    "title": "text"
   }
 }

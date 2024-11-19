@@ -299,7 +299,7 @@
   "currentTheme": {
     "settings": {
       "codeblock": {
-        "lineNumbers": false,
+        "lineNumbers": true,
         "unwrapLines": true,
         "wrapLinesActive": false,
         "curvature": 4
@@ -427,7 +427,7 @@
         "highlights": {
           "activeCodeblockLineColour": "--color-base-30",
           "activeEditorLineColour": "--color-base-20",
-          "defaultColour": "--text-highlight-bg",
+          "defaultColour": "#D1669F2B",
           "alternativeHighlights": {}
         },
         "inline": {

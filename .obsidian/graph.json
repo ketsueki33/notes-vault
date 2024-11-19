@@ -22,10 +22,10 @@
       }
     },
     {
-      "query": "path:\"Knowledge Base/DSA\"  ",
+      "query": "path:\"Knowledge Base/DSA\" ",
       "color": {
         "a": 1,
-        "rgb": 15817563
+        "rgb": 15018832
       }
     },
     {
@@ -53,7 +53,21 @@
       "query": "path:\"Knowledge Base/LeetCode\"  ",
       "color": {
         "a": 1,
-        "rgb": 10557207
+        "rgb": 13508649
+      }
+    },
+    {
+      "query": "path:\"Knowledge Base/HTML\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 16734003
+      }
+    },
+    {
+      "query": "path:\"Knowledge Base/CSS\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 2510308
       }
     }
   ],
@@ -61,12 +75,12 @@
   "showArrow": true,
   "textFadeMultiplier": -0.9,
   "nodeSizeMultiplier": 1,
-  "lineSizeMultiplier": 1,
+  "lineSizeMultiplier": 1.82265625,
   "collapse-forces": false,
   "centerStrength": 0.565104166666667,
   "repelStrength": 14.7395833333333,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 0.33591195678107755,
+  "scale": 0.13348388671875,
   "close": true
 }

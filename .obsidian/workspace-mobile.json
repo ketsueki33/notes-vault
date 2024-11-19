@@ -13,10 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Journal/Games/Pokemon HeartGold.md",
+                "file": "Knowledge Base/DSA/Practice/Trie/Sum of Prefix Scores of Strings (LC2416).md",
                 "mode": "preview",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "Sum of Prefix Scores of Strings (LC2416)"
             },
             "group": "01677821d61b967b"
           },
@@ -26,10 +28,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Stuff/Storage Notes.md",
+                "file": "Stuff/PG Search.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "PG Search"
             }
           },
           {
@@ -38,13 +42,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Stuff/Address Book.md",
+                "file": "Knowledge Base/React/Hooks.md",
                 "mode": "preview",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "Hooks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "cf81433cea826648",
@@ -56,7 +63,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Journal/Games/Pokemon HeartGold.md",
+                "file": "Knowledge Base/DSA/Practice/Trie/Sum of Prefix Scores of Strings (LC2416).md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -79,10 +86,12 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 1.7405657879302798,
+                  "scale": 0.5100145411647458,
                   "close": true
                 }
-              }
+              },
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             },
             "group": "01677821d61b967b"
           }
@@ -102,7 +111,9 @@
           "type": "file-explorer",
           "state": {
             "sortOrder": "alphabetical"
-          }
+          },
+          "icon": "lucide-folder-closed",
+          "title": "Files"
         }
       },
       {
@@ -117,7 +128,9 @@
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical"
-          }
+          },
+          "icon": "lucide-search",
+          "title": "Search"
         }
       },
       {
@@ -128,7 +141,9 @@
           "state": {
             "sortOrder": "frequency",
             "useHierarchy": true
-          }
+          },
+          "icon": "lucide-tags",
+          "title": "Tags"
         }
       },
       {
@@ -136,7 +151,9 @@
         "type": "leaf",
         "state": {
           "type": "bookmarks",
-          "state": {}
+          "state": {},
+          "icon": "lucide-bookmark",
+          "title": "Bookmarks"
         }
       },
       {
@@ -148,7 +165,9 @@
             "sortOrder": "frequency",
             "showSearch": false,
             "searchQuery": ""
-          }
+          },
+          "icon": "lucide-archive",
+          "title": "All properties"
         }
       }
     ],
@@ -164,7 +183,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "Journal/Games/Pokemon HeartGold.md",
+            "file": "Stuff/Ideas💡.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -172,7 +191,9 @@
             "searchQuery": "",
             "backlinkCollapsed": false,
             "unlinkedCollapsed": true
-          }
+          },
+          "icon": "links-coming-in",
+          "title": "Backlinks"
         }
       },
       {
@@ -181,10 +202,12 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "Journal/Games/Pokemon HeartGold.md",
+            "file": "Stuff/Ideas💡.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
-          }
+          },
+          "icon": "links-going-out",
+          "title": "Outgoing links"
         }
       },
       {
@@ -193,8 +216,10 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "Journal/Games/Pokemon HeartGold.md"
-          }
+            "file": "Knowledge Base/DSA/Practice/Backtracking/Permutations (LC46).md"
+          },
+          "icon": "lucide-list",
+          "title": "Outline"
         }
       },
       {
@@ -202,7 +227,9 @@
         "type": "leaf",
         "state": {
           "type": "calendar",
-          "state": {}
+          "state": {},
+          "icon": "calendar-with-checkmark",
+          "title": "Calendar"
         }
       }
     ],
@@ -216,38 +243,37 @@
       "canvas:Create new canvas": false,
       "command-palette:Open command palette": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false,
-      "periodic-notes:Open today": false
+      "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "470c723a95745e4e",
+  "active": "45281492e5f320ec",
   "lastOpenFiles": [
-    "Knowledge Base/JavaScript/Functions.md",
-    "Stuff/Address Book.md",
-    "Stuff/Storage Notes.md",
-    "Knowledge Base/JavaScript/JavaScript.md",
-    "Journal/Games/Pokemon HeartGold.md",
-    "Journal/Quotes.md",
-    "Knowledge Base/JavaScript/Closures.md",
-    "Knowledge Base/JavaScript/'this' keyword.md",
-    "Knowledge Base/JavaScript/Async JavaScript.md",
     "Stuff/Stuff.md",
-    "Stuff/Interview Guide.md",
-    "Knowledge Base/DSA/Practice/Strings/Longest Palindromic Substring (LC5).md",
-    "Knowledge Base/DSA/_assets/Longest Palindromic Substring (LC5) 2024-07-15 15.55.36.excalidraw.md",
-    "Knowledge Base/DSA/Practice/Strings/Strings.md",
-    "Knowledge Base/JavaScript/Arrays.md",
-    "Knowledge Base/DSA/Practice/Arrays/Maximum Sum Subarray - Kadane's Algo (LC53).md",
-    "Knowledge Base/DSA/Practice/Arrays/Stock Buy and Sell I (LC121).md",
-    "Stuff/Routine.md",
-    "Stuff/To Learn.md",
-    "Knowledge Base/React/Introduction.md",
+    "Stuff/Storage Notes.md",
+    "Knowledge Base/DSA/Practice/Trie/Sum of Prefix Scores of Strings (LC2416).md",
+    "Knowledge Base/DSA/Practice/Trie/Trie.md",
+    "Knowledge Base/DSA/Practice/Practice.md",
+    "Knowledge Base/DSA/DSA.md",
+    "Knowledge Base/DSA/Practice/Backtracking/Permutations (LC46).md",
+    "Knowledge Base/LeetCode/LeetCode.md",
+    "Stuff/Address Book.md",
+    "Knowledge Base/CSS/Flexbox Layout.md",
+    "Knowledge Base/CSS/CSS.md",
+    "Knowledge Base/HTML.md",
+    "Knowledge Base/HTML/HTML.md",
+    "Stuff/Ideas💡.md",
+    "Journal/Pickup.md",
+    "Journal/Games/FB.md",
+    "Journal/Games/Pokemon HeartGold.md",
+    "Stuff/Gym maybe.md",
+    "Knowledge Base/React/Hooks.md",
     "Knowledge Base/React/React.md",
+    "Knowledge Base/LeetCode/Permutation in String (LC567).md",
+    "Stuff/To Learn.md",
     "Knowledge Base/NextJS/NextJS.md",
-    "Knowledge Base/DSA/Practice/Arrays/Set Matrix Zeroes (LC73).md",
-    "Knowledge Base/DSA/_assets/Set Matrix Zeroes 1.excalidraw.md",
-    "Knowledge Base/DSA/Practice/Arrays/Stock Buy and Sell II (LC122).md",
-    "Knowledge Base/DSA/_assets/Stock Buy and Sell II (LC122) 2024-06-29 02.17.53.excalidraw.md",
+    "Knowledge Base/NextJS/Authentication with Clerk.md",
+    "Knowledge Base/LeetCode/Fraction Addition and Subtraction (LC592).sync-conflict-20240920-010021-R7FGEEP.md",
+    "Knowledge Base/NextJS/Authentication with Clerk.sync-conflict-20240920-010021-R7FGEEP.md",
     "Journal/_assets/Pasted image 20240617001511.png",
     "Journal/_assets/Pasted image 20240617001443.png",
     "Pasted image 20240613012545.png",

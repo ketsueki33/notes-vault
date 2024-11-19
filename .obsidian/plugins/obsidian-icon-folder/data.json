@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
-      "LiLink",
-      "SiJavascript",
-      "CuNextJsLogo",
-      "SiReact",
-      "SiLeetcode"
+      "SiCss3",
+      "SiHtml5",
+      "SiTinder",
+      "LiGamepad2",
+      "SiPython"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -30,7 +30,8 @@
     "iconsInNotesEnabled": true,
     "iconsInLinksEnabled": false,
     "iconIdentifier": ":",
-    "debugMode": false
+    "debugMode": false,
+    "lucideIconPackType": "native"
   },
   "Cheat Sheet": "LiBookPlus",
   "Cheat Sheet/VSCode.md": "CuVscode",
@@ -50,9 +51,9 @@
   "Cheat Sheet/CSS.md": "FabCss3",
   "Cheat Sheet/C++.md": "SiCplusplus",
   "Knowledge Base/LeetCode": "SiLeetcode",
-  "React": "SiReact",
-  "NextJS": "CuNextJsLogo",
-  "LeetCode": "SiLeetcode",
-  "JavaScript": "SiJavascript",
-  "DSA": "LiLink"
+  "Knowledge Base/Python": "SiPython",
+  "Journal/Games": "LiGamepad2",
+  "Journal/Pickup.md": "SiTinder",
+  "Knowledge Base/CSS": "SiCss3",
+  "Knowledge Base/HTML.md": "SiHtml5"
 }

@@ -89,5 +89,6 @@
   },
   "hideCollapsingIcon": false,
   "tabManagerEnabled": true,
-  "ignoreAttachmentFolder": true
+  "ignoreAttachmentFolder": true,
+  "deleteFilesAction": "trash"
 }

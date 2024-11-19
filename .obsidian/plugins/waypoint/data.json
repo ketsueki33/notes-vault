@@ -6,7 +6,7 @@
   "showNonMarkdownFiles": false,
   "debugLogging": false,
   "useWikiLinks": true,
-  "useFrontMatterTitle": false,
+  "useFrontMatterTitle": true,
   "showEnclosingNote": false,
   "folderNoteType": "INSIDE_FOLDER",
   "ignorePaths": [

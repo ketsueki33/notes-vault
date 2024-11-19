@@ -8,6 +8,15 @@
     --callout-color: 255, 50, 40;
     --callout-icon: siren;
 }
+
+.callout[data-callout="note"] {
+    --callout-icon: scroll-text;
+}
+
+.callout[data-callout="info"] {
+    --icon-size: 1.25rem;
+}
+
 /* ------------------------- */
 
 /* Remove margin above starting of lists */
@@ -47,10 +56,9 @@ ol:first-child > li:first-child ol:first-child > li:first-child {
 
 /* Add margin abobe dataview table */
 
-.block-language-dataview{
-    margin-top : 10px;
+.block-language-dataview {
+    margin-top: 10px;
 }
-
 
 /* ------------------------- */
 

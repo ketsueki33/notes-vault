@@ -19,5 +19,7 @@
   },
   "propertiesInDocument": "hidden",
   "attachmentFolderPath": "./",
-  "showInlineTitle": true
+  "showInlineTitle": true,
+  "newLinkFormat": "relative",
+  "defaultViewMode": "preview"
 }

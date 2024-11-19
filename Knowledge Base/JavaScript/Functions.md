@@ -3,7 +3,22 @@ Generally speaking, a function is a "subprogram" that can be _called_ by code ex
 In JavaScript, functions are [first-class objects](https://developer.mozilla.org/en-US/docs/Glossary/First-class_Function), because they can be passed to other functions, returned from functions, and assigned to variables and properties. They can also have properties and methods just like any other object. What distinguishes them from other objects is that functions can be called.
 
 
+> [!NOTE] First-class Functions
+> A programming language is said to have **First-class functions** when functions in that language are treated like any other variable. This special treatment is also called **First Class Citizen** treatment.
+> 
+> In JavaScript, a function can be passed as an argument to other functions, can be returned by another function and can be assigned as a value to a variable. 
+> 
+> Therefore, *JS functions are first-class functions*.
+
+
+
+
+
+
+
+
 #### Function Declaration
+This method is also called **Function Statement**.
 syntax:
 ```js 
 function myFunction(g1, g2) {
@@ -23,7 +38,7 @@ function square(x) {
 #### Function Expression
 The `function` keyword can be used to define a function inside an expression.
 
-A `function` expression is very similar to, and has almost the same syntax as, a [[Functions#Function Declaration|Function declaration]]. The main difference between a `function` expression and a `function` declaration is the _function name_, which can be omitted in `function` expressions to create _anonymous_ functions. A `function` expression can be used as an [IIFE](https://www.udacity.com/blog/2023/03/immediately-invoked-function-expressions-iife-in-javascript.html) (Immediately Invoked Function Expression) which runs as soon as it is defined.
+A `function` expression is very similar to, and has almost the same syntax as, a [[Functions#Function Declaration|Function declaration]]. The main difference between a `function` expression and a `function` declaration is the _function name_, which can be omitted in `function` expressions to create **anonymous functions**. A `function` expression can be used as an [IIFE](https://www.udacity.com/blog/2023/03/immediately-invoked-function-expressions-iife-in-javascript.html) (Immediately Invoked Function Expression) which runs as soon as it is defined.
 
 Ex) Write a function expression to concatenate two strings and return it.
 ```js
@@ -32,10 +47,31 @@ const concat = function (s1, s2) {
 };
 ```
 
+###### Named Function Expression
+If we give the  function a name in the function expression, then it's called a *named function expression*. 
+
+If we try to call the function by it's given name instead of the variable name, we get a `ReferenceError`.
+```js
+var f = function xyz(){
+    console.log(1);
+}
+
+f(); // 1
+xyz(); // ReferenceError: xyz is not defined
+```
+
+We can still access the function by it's given name inside the function itself though. This is cause the function(with the name) is created as a local variable.
+```js
+var f = function xyz() {
+    console.log(xyz);
+};
+
+f(); // [Function: xyz]
+```
 #### Arrow Functions
 An Arrow Function in JavaScript, introduced in ES6, offers a concise syntax for defining function expressions using =>. It maintains lexical `this` binding ([['this' keyword#Arrow Functions and 'this'|see here]]) and provides shorter, more readable code compared to traditional functions. Arrow functions enhance code structure by simplifying function syntax without sacrificing functionality or clarity.
 
-**Arrow functions** are anonymous functions i.e. functions without a name but they are often assigned to any variable. They are also called **Lambda Functions**.
+Arrow functions are **anonymous functions** i.e. functions without a name but they are often assigned to any variable. They are also called **Lambda Functions**.
 
 ex) Write an arrow function to check if a string contains a specific character.
 ```js

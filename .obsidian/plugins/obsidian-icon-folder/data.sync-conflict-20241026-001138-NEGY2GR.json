@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
-      "FabCss3",
-      "FabSquareJs",
-      "FabJs",
-      "StObsidian",
-      "LiLink"
+      "SiHtml5",
+      "SiTinder",
+      "LiGamepad2",
+      "SiPython",
+      "SiLeetcode"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -30,7 +30,8 @@
     "iconsInNotesEnabled": true,
     "iconsInLinksEnabled": false,
     "iconIdentifier": ":",
-    "debugMode": false
+    "debugMode": false,
+    "lucideIconPackType": "native"
   },
   "Cheat Sheet": "LiBookPlus",
   "Cheat Sheet/VSCode.md": "CuVscode",
@@ -45,7 +46,13 @@
   "Journal/Quotes.md": "LiQuote",
   "Knowledge Base/React": "FabReact",
   "Knowledge Base/DSA": "LiLink",
-  "Cheat Sheet/Obsidian.md": "StObsidian",
+  "Cheat Sheet/Obsidian.md": "CuObsidian",
   "Knowledge Base/JavaScript": "FabSquareJs",
-  "Cheat Sheet/CSS.md": "FabCss3"
+  "Cheat Sheet/CSS.md": "FabCss3",
+  "Cheat Sheet/C++.md": "SiCplusplus",
+  "Knowledge Base/LeetCode": "SiLeetcode",
+  "Knowledge Base/Python": "SiPython",
+  "Journal/Games": "LiGamepad2",
+  "Journal/Pickup.md": "SiTinder",
+  "Knowledge Base/HTML": "SiHtml5"
 }

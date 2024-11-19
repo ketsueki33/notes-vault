@@ -4,18 +4,67 @@
     "type": "split",
     "children": [
       {
-        "id": "8530e59594eb9757",
+        "id": "462a2ec49f9933b0",
         "type": "tabs",
         "children": [
           {
-            "id": "585d60e325948613",
+            "id": "d9589fcc9d4d74c9",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Knowledge Base/DSA/Theory/Stacks.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Stacks"
+            }
+          },
+          {
+            "id": "894954e0df9ed680",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Knowledge Base/JavaScript/Variables & Data Types.md",
+                "mode": "preview",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "Variables & Data Types"
+            }
+          },
+          {
+            "id": "cd05773c9bbd073a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Knowledge Base/DSA/Theory/Stacks.md",
+                "mode": "preview",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "Stacks"
+            }
+          },
+          {
+            "id": "bec90c22e36c4c0f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Knowledge Base/LeetCode/Defuse the Bomb (LC1652).md",
+                "mode": "preview",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "Defuse the Bomb (LC1652)"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -35,7 +84,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "byCreatedTimeReverse"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           },
           {
@@ -44,13 +95,15 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "error",
+                "query": "pg search7766986677",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
           },
           {
@@ -58,14 +111,16 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 257.5
+    "width": 200
   },
   "right": {
     "id": "5e4a488b592c2e3a",
@@ -81,7 +136,9 @@
             "type": "leaf",
             "state": {
               "type": "calendar",
-              "state": {}
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
             }
           },
           {
@@ -89,7 +146,11 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Knowledge Base/LeetCode/Defuse the Bomb (LC1652).md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Defuse the Bomb (LC1652)"
             }
           },
           {
@@ -100,7 +161,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
             }
           },
           {
@@ -112,7 +175,9 @@
                 "sortOrder": "frequency",
                 "showSearch": true,
                 "searchQuery": ""
-              }
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
             }
           },
           {
@@ -120,7 +185,9 @@
             "type": "leaf",
             "state": {
               "type": "advanced-tables-toolbar",
-              "state": {}
+              "state": {},
+              "icon": "spreadsheet",
+              "title": "Advanced Tables"
             }
           },
           {
@@ -129,9 +196,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Knowledge Base/NextJS/Setup.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Setup"
             }
           },
           {
@@ -140,6 +210,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Knowledge Base/NextJS/Setup.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +218,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Setup"
             }
           }
         ],
@@ -156,14 +229,18 @@
       {
         "id": "c75eddb938cd2fc2",
         "type": "tabs",
-        "dimension": 19.71291866028708,
+        "dimension": 22.77511961722488,
         "children": [
           {
             "id": "2b3e242b96d41821",
             "type": "leaf",
             "state": {
               "type": "file-properties",
-              "state": {}
+              "state": {
+                "file": "Knowledge Base/LeetCode/Defuse the Bomb (LC1652).md"
+              },
+              "icon": "lucide-info",
+              "title": "File properties for Defuse the Bomb (LC1652)"
             }
           }
         ]
@@ -171,7 +248,7 @@
       {
         "id": "d3dd4a38fa1300b1",
         "type": "tabs",
-        "dimension": 35.119617224880386,
+        "dimension": 32.057416267942585,
         "children": [
           {
             "id": "5ea4e629aaa1ad2c",
@@ -179,6 +256,7 @@
             "state": {
               "type": "localgraph",
               "state": {
+                "file": "Knowledge Base/LeetCode/Defuse the Bomb (LC1652).md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -201,17 +279,19 @@
                   "repelStrength": 11.1458333333333,
                   "linkStrength": 0.807291666666667,
                   "linkDistance": 138,
-                  "scale": 0.44444444444444375,
+                  "scale": 0.13168724279835364,
                   "close": true
                 }
-              }
+              },
+              "icon": "lucide-git-fork",
+              "title": "Graph of Defuse the Bomb (LC1652)"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 315.5
+    "width": 296.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -225,53 +305,53 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "585d60e325948613",
+  "active": "bec90c22e36c4c0f",
   "lastOpenFiles": [
-    "JavaScript/JavaScript.md",
-    "DSA/Practice/Practice.md",
-    "DSA/Practice/Arrays/Arrays.md",
-    "DSA/DSA.md",
-    "LeetCode/LeetCode.md",
-    "Knowledge Base/DSA/Practice/Bit Manipulation/Bit Manipulation.md",
-    "Knowledge Base/DSA/Practice/Arrays/Merge Intervals (LC56).md",
-    "Knowledge Base/DSA/Practice/Strings/Longest Palindromic Substring (LC5).md",
-    "Knowledge Base/DSA/Practice/Practice.md",
-    "Knowledge Base/DSA/Practice/Dynamic Programming/Longest Common Subsequence (LC1143).md",
-    "Cheat Sheet/C++.md",
-    "Stuff/Address Book.md",
-    "Stuff/Noy Maths Tutoring/Noy-Ratio&Proportions.md",
-    "Knowledge Base/DSA/Practice/Bit Manipulation/Number Complement (LC476).md",
-    "Knowledge Base/DSA/Practice/Backtracking/Permutations (LC46).md",
     "Knowledge Base/LeetCode/LeetCode.md",
-    "Knowledge Base/JavaScript/Error Handling.md",
-    "Knowledge Base/DSA/Practice/Binary Tree/Binary Tree Inorder Traversal (LC94).md",
-    "Knowledge Base/React/Misc Tips & Tricks.md",
-    "_Excalidraw/Drawing 2024-08-22 12.13.20.excalidraw.md",
-    "_Excalidraw/Drawing 2024-08-22 12.13.24.excalidraw.md",
-    "Knowledge Base/DSA/Practice/Dynamic Programming/Dynamic Programming.md",
-    "Knowledge Base/DSA/Practice/Binary Tree/Binary Tree Right Side View (LC199).md",
-    "Knowledge Base/DSA/Practice/Bit Manipulation",
-    "Stuff/Noy Maths Tutoring/_assets/Pasted Image 20240821234605_863.png",
+    "Knowledge Base/LeetCode/Defuse the Bomb (LC1652).md",
+    "Stuff/Address Book.md",
+    "Stuff/PG Search.md",
+    "Stuff/Stuff.md",
     "Stuff/To Learn.md",
-    "Knowledge Base/DSA/Practice/Binary Tree/Binary Tree Preorder Traversal (LC144).md",
-    "Knowledge Base/DSA/Practice/Binary Tree/Binary Tree Postorder Traversal (LC145).md",
-    "Stuff/Noy Maths Tutoring/_assets/Pasted Image 20240821234450_860.png",
-    "Stuff/Noy Maths Tutoring/_assets/Pasted Image 20240821234320_840.png",
-    "Stuff/Noy Maths Tutoring/_assets/Pasted Image 20240821233846_147.png",
-    "Stuff/Noy Maths Tutoring/_assets/Pasted Image 20240821203848_531.png",
-    "Stuff/Noy Maths Tutoring/_assets",
-    "Stuff/Noy Maths Tutoring",
-    "Stuff/Noy Maths Tutoring/_assets/Pasted Image 20240821201457_491.png",
-    "Stuff/Noy Maths Tutoring/_assets/Pasted Image 20240821201241_478.png",
-    "Stuff/Noy Maths Tutoring/_assets/Pasted Image 20240821200639_446.png",
-    "Stuff/Noy Maths Tutoring/_assets/Pasted Image 20240821200410_426.png",
-    "Stuff/Noy Maths Tutoring/_assets/Pasted Image 20240821195632_393.png",
-    "Knowledge Base/DSA/Practice/Binary Tree",
-    "Knowledge Base/DSA/Practice/Strings/Untitled",
-    "Knowledge Base/LeetCode",
-    "Knowledge Base/DSA/Practice/Dynamic Programming",
-    "Knowledge Base/DSA/Practice/Backtracking",
-    "Journal/Games",
-    "Knowledge Base/DSA/Practice/Maths"
+    "Cheat Sheet/C++.md",
+    "Knowledge Base/DSA/Theory/Stacks.md",
+    "Knowledge Base/DSA/DSA.md",
+    "Knowledge Base/LeetCode/Minimized Maximum of Products Distributed to Any Store (LC2064).md",
+    "Cheat Sheet/Cheat Sheet.md",
+    "Knowledge Base/JavaScript/Functions.md",
+    "Knowledge Base/JavaScript/Variables & Data Types.md",
+    "Knowledge Base/JavaScript/JavaScript.md",
+    "Knowledge Base/JavaScript/Objects.md",
+    "Knowledge Base/LeetCode/Count the Number of Fair Pairs (LC2563).md",
+    "Knowledge Base/LeetCode/Prime Subtraction Operation (LC2601).md",
+    "Knowledge Base/LeetCode/Shortest Subarray With OR at Least K II (LC3097).md",
+    "Knowledge Base/LeetCode/Most Beautiful Item for Each Query (LC2070).md",
+    "Knowledge Base/DSA/Practice/Practice.md",
+    "Knowledge Base/JavaScript/'this' keyword.md",
+    "Knowledge Base/JavaScript/Interview Tidbits.md",
+    "Knowledge Base/CSS/Flexbox Layout.md",
+    "Knowledge Base/CSS/CSS.md",
+    "Knowledge Base/CSS/Grid Layout.md",
+    "Knowledge Base/CSS/Responsive Design.md",
+    "Knowledge Base/JavaScript/_assets/Pasted image 20240717121347.png",
+    "Knowledge Base/JavaScript/_assets/execution_context_4.png",
+    "Knowledge Base/JavaScript/_assets/execution_context_3.png",
+    "Knowledge Base/JavaScript/_assets/execution_context_2.png",
+    "Knowledge Base/JavaScript/_assets/execution_context_1.png",
+    "Knowledge Base/JavaScript/_assets/JS_logo.png",
+    "Knowledge Base/CSS/_assets/responsive-flexbox-4.png",
+    "Knowledge Base/CSS/_assets/responsive-flexbox-3.png",
+    "Knowledge Base/CSS/_assets/responsive-flexbox-2.png",
+    "Knowledge Base/CSS/_assets/responsive-flexbox-1.png",
+    "Knowledge Base/CSS/_assets",
+    "Knowledge Base/CSS",
+    "Journal/Games/~syncthing~FB.md.tmp",
+    "Knowledge Base/HTML/~syncthing~HTML.md.tmp",
+    "Knowledge Base/HTML",
+    "Knowledge Base/DSA/Practice/Stacks",
+    "Knowledge Base/Python",
+    "Untitled",
+    "Knowledge Base/DSA/Practice/Trie",
+    "Knowledge Base/DSA/Theory"
   ]
 }
